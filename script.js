@@ -425,9 +425,9 @@ document.addEventListener("visibilitychange", function () {
             "Violation Count: " + violationCount
         );
 
-        // Auto submit after 3 violations
+        // Auto submit after 5 violations
 
-        if (violationCount >= 3) {
+        if (violationCount >= 5) {
 
             alert(
                 "You have exceeded the allowed violations.\n\n" +
