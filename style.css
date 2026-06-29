@@ -82,7 +82,7 @@ body{
     pointer-events: none;
 
     z-index: 9999;
-    opacity: 0.2;
+    opacity: 0.4;
     white-space: nowrap;
 }
 
