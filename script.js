@@ -55,7 +55,9 @@ function loadQuestions() {
     .then(data => {
 
         questions = data;
-
+    // Randomize question order
+        questions.sort(() => Math.random() - 0.5);
+        
         questions.forEach(q => {
 
             if(q.answer === "A") q.answer = 0;
