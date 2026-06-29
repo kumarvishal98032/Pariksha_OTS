@@ -89,6 +89,10 @@ function loadQuestions() {
 
 function loadQ(){
 
+    //water mark
+        document.getElementById("studentWatermark").innerHTML =
+        document.getElementById("studentName").value;
+    // water mark
     
     document.getElementById('qno').innerHTML =
         'Question ' + (current + 1);
