@@ -495,3 +495,55 @@ function startExam() {
     // Hide button after click
     document.getElementById("startBtn").style.display = "none";
 }
+
+
+
+// Disable Right Click
+document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+});
+
+// Disable Copy, Paste and Cut
+document.addEventListener("copy", function(e){
+    e.preventDefault();
+});
+
+document.addEventListener("paste", function(e){
+    e.preventDefault();
+});
+
+document.addEventListener("cut", function(e){
+    e.preventDefault();
+});
+
+// Disable Keyboard Shortcuts
+
+document.addEventListener("keydown", function(e){
+
+    // F12
+    if(e.key === "F12"){
+        e.preventDefault();
+    }
+
+    // Ctrl+U
+    if(e.ctrlKey && e.key.toLowerCase() === "u"){
+        e.preventDefault();
+    }
+
+    // Ctrl+S
+    if(e.ctrlKey && e.key.toLowerCase() === "s"){
+        e.preventDefault();
+    }
+
+    // Ctrl+P
+    if(e.ctrlKey && e.key.toLowerCase() === "p"){
+        e.preventDefault();
+    }
+
+    // Ctrl+Shift+I/J/C
+    if(e.ctrlKey && e.shiftKey &&
+       ["I","J","C"].includes(e.key.toUpperCase())){
+        e.preventDefault();
+    }
+
+});
