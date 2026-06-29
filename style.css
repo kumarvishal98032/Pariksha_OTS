@@ -65,3 +65,24 @@ body{
     -ms-user-select: none;
     user-select: none;
 }
+
+// for water mark
+#studentWatermark{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) rotate(-30deg);
+
+    font-size: 60px;
+    font-weight: bold;
+
+    color: rgba(0,0,0,0.08);
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    white-space: nowrap;
+}
+// water mark ends here
